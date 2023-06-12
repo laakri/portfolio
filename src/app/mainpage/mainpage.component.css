@@ -1,0 +1,111 @@
+.change_theme mat-icon{
+  color: var(--whitecolor);
+}
+.change_theme {
+  position: absolute;
+  right: 0;
+}
+.content{
+  position: absolute;
+  z-index: 2;
+  height: max-content;
+  width: max-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 250px;
+}
+.content1{
+  position: absolute;
+  z-index: 2;
+  height: max-content;
+  width: max-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 410px;
+}
+.content1 button{
+  font-size: 18px;
+  margin: auto 10px;
+  opacity: 0.8;
+}
+
+.content1 button{
+  background-color: var(--maincolor) ;
+  color: var(--whitecolor);
+  font-size: 16px;
+}
+
+.content1 button:hover{
+  background-color: var(--maincolor) ;
+  color: var(--whitecolor);
+}
+.content2{
+  position: absolute;
+  height: max-content;
+  width: max-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 480px;
+}
+.content2 button{
+  font-size: 18px;
+  margin: auto 10px;
+  opacity: 0.8;
+}
+.content2 button:hover{
+  background-color: var(--darkcolor) ;
+  
+  color: var(--whitecolor);
+
+}
+.social-media{
+  margin: 10px;
+}
+
+.typewriter {
+  height: 50px;
+  margin-top: 40px;
+}
+.under_typewriter {
+  text-align: center;
+
+}
+.under_typewriter span {
+  font-size: 60px;
+  height: 300px;
+}
+
+.typewriter h1 {
+  font-size: 30px;
+  color: var(--whitecolor);
+  font-family: "Times New Roman", Times, serif;
+  overflow: hidden;
+  border-right: 0.15em solid var(--maincolor)  ;
+  white-space: nowrap;
+  margin: 0 auto auto auto;
+  letter-spacing: 0.15em;
+  height: 43px;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--maincolor);
+  }
+}

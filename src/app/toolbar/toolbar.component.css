@@ -1,0 +1,42 @@
+
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mainpage{
+  max-width: 1200px;
+  margin: auto;
+}
+
+mat-toolbar{
+  background-color: transparent;
+  height: 100px;
+}
+
+span{
+  font-size: 25px;
+  color: var(--maincolor);
+  letter-spacing: 1px;
+}
+
+button{
+  font-size: 16px;
+
+  color: var(--whitecolor) !important;
+  padding: 0px 20px;
+  align-items: center;
+}
+button:hover{
+  color: var(--maincolor) !important;
+  
+}
+
+.hire-button{
+  background-color: var(--maincolor) !important;
+  border-radius: 30px;
+}
+
+.hire-button:hover{
+  color: var(--darkcolor) !important;
+}

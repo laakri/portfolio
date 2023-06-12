@@ -1,0 +1,126 @@
+.middle{
+  max-width: 1200px;
+  margin: auto;
+}
+
+/************ First Content ***************/
+.firstcontent{
+  width: 100%;
+  display: flex;
+  margin: 40px;
+}
+/********** left card *****************/
+
+.card-left{
+  margin-left: 10px;
+  margin-top:10px ;
+  width: 30%;
+  height: 420px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.card-left img{
+  margin-top: 30px;
+  height: 250px;
+  width: 250px; 
+}
+.card-left h4 h2{
+  margin: 20px 0;
+}
+.skills{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skill{
+  
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+mat-progress-bar {
+  width: 80% ;
+  border-radius: 5px;
+}
+
+
+/********** right card *****************/
+
+  
+.card-right{
+  width: 60%;
+  min-height: 450px;
+  background-color: transparent;
+  box-shadow: none;
+
+}
+.text-card-right{
+  margin-left: 20px;
+}
+.text-card-right h2{
+  margin-top: 30px;
+  color: var(--whiteolor);
+}
+.text-card-right span{
+  color: var(--graycolor);
+  font-size: 16px;
+}
+/************ Secend Content ***************/
+.secend-content{
+  min-height: 300px;
+}
+
+
+  /***********************************************/
+  .search-bar {
+    margin: 20px auto 0 20px;
+    width: 350px;
+  }
+  .list-items {
+    margin: 20px auto 40px auto;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .list-item {
+    margin: 10px;
+    height: 220px;
+    width: 270px;
+    border-radius: 20px;
+    background-color: var(--soft-darkcolor);
+    border: var(--soft-darkcolor) 1px solid;
+    position: relative;
+  }
+  .list-item-type {
+    width: max-content;
+    height: 25px;
+    padding: 0 10px;
+    position: absolute;
+    background-color: white;
+    right: 25px;
+    top: 20px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+  }
+  .list-item-logo {
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  .list-item-name {
+    margin: 30px 20px 10px 20px;
+    font-size: 18px;
+  }
+  .list-item-discription {
+    margin: 0 20px;
+    color: var(--graycolor);
+  }
+  

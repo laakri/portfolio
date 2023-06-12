@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html,
+body.bright-theme {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--whitecolor);
+  background: var(--darkcolor);
+  font-family: "Roboto", sans-serif;
+
+  --bordercolor: rgb(219, 219, 219);
+  --darkcolor: #fff;
+  --soft-darkcolor: #F0F5F9;
+  --whitecolor: #000000;
+  --graycolor: #444444;
+  --maincolor: #dd7367;
+  --maintranscolor: #d6594b80;
+  --secondcolor: #c04e14;
+  --darktranscolor: #fdfdfdce;
+  --soft-darktranscolor: #94959769;
+  --buttonactive: #b7b6e5;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--whitecolor);
+  background: var(--darkcolor);
+  font-family: "Roboto", sans-serif;
+
+  --darkcolor: #050923;
+  --bordercolor: #6f6e6e;
+  --darkcolor: #151515;
+  --soft-darkcolor: #1b1a1d;
+  --whitecolor: #fcfcfd;
+  --graycolor: #828283;
+  --maincolor: #FF7F50;
+  --maintranscolor: #FF7F5080;
+  --secondcolor: #c04e14;
+  --darktranscolor: #19181ada;
+  --soft-darktranscolor: #26272b69;
+  --buttonactive: #46526e;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--whitecolor);
+}
+
+.fas {
+  font-size: 27px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+mat-spinner {
+  margin: 200px auto;
+  z-index: 1001;
+}
+
+.mat-divider {
+  border-top-color: rgb(55, 55, 55);
+}
+
+.mat-form-field .mat-form-field-label {
+  color: var(--darkcolor) !important;
+}
+
+.mat-form-field .mat-select-arrow {
+  color: var(--darkcolor) !important;
+}
+
+.mat-form-field .mat-select-min-line {
+  color: var(--darkcolor) !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: var(--darkcolor) !important;
+}
+
+.mat-form-field .mat-input-underline {
+  background-color: var(--darkcolor) !important;
+}
+
+.mat-form-field.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: var(--graycolor) !important;
+}

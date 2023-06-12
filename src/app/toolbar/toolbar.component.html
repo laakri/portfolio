@@ -1,0 +1,20 @@
+<div class="mainpage">
+  <mat-toolbar>
+    <a routerLink=""><span>_Laakri</span></a>
+    <span class="example-spacer"></span>
+
+    <div class="left-content">
+      <button mat-button routerLink="home">Home</button>
+      <button mat-button routerLink="about">About</button>
+      <button mat-button routerLink="resume">Resume</button>
+      <button mat-raised-button routerLink="contact" class="hire-button">
+        Hire me
+      </button>
+      <button mat-button (click)="change_theme()">
+        <mat-icon aria-label="campaign">brightness_medium</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>

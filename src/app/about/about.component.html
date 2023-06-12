@@ -1,0 +1,88 @@
+<div class="middle">
+  <div class="firstcontent">
+    <mat-card class="card-left">
+      <h4>ABOUT <span style="color: #ff7f50; margin-left: 10px">____</span></h4>
+      <h2>LEARN MORE ABOUT ME</h2>
+      <img src="../../../assets/saiif.png" alt="" data-aos="flip-left" />
+      <div class="skills">
+        <div class="skill">
+          <h2>Frontend</h2>
+          <mat-progress-bar
+            #progressBar
+            mode="determinate"
+            [value]="progressValuefront"
+          ></mat-progress-bar>
+          <h2>80%</h2>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="skill">
+          <h2>Backend</h2>
+          <mat-progress-bar
+            #progressBar
+            mode="determinate"
+            [value]="progressValueback"
+          ></mat-progress-bar>
+          <h2>70%</h2>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="card-right" data-aos="zoom-in-down">
+      <div class="text-card-right">
+        <h2>About Me:</h2>
+        <span>
+          Welcome to my portfolio website! I'm Seif Eddine Jelassi, a
+          23-year-old web developer from Tunisia. I studied multimedia and web
+          development for three years at ISET Nabeul and then pursued a year of
+          engineering informatics at ESPRIT Monastir.
+        </span>
+
+        <h2>Passion for Captivating Websites:</h2>
+        <span>
+          I'm passionate about creating captivating websites that combine
+          stunning design with functionality. Proficient in HTML, CSS,
+          JavaScript, and React, I stay updated with the latest trends to
+          deliver modern and user-friendly solutions.
+        </span>
+
+        <h2>Attention to Detail and Problem-Solving Skills:</h2>
+        <span>
+          With a strong attention to detail and problem-solving skills, I'm
+          dedicated to delivering high-quality projects on time.
+        </span>
+        <h2>Collaborations and Inquiries:</h2>
+        <span>
+          Explore my work and feel free to reach out for collaborations or
+          inquiries. Let's bring your digital vision to life together!
+        </span>
+      </div>
+    </mat-card>
+  </div>
+  <div class="secend-content">
+    <mat-form-field class="search-bar" appearance="outline">
+      <mat-label> ❉/ Search</mat-label>
+
+      <input
+        type="text"
+        matInput
+        [formControl]="myControl"
+        [matAutocomplete]="auto"
+      />
+
+      <mat-autocomplete #auto="matAutocomplete"> </mat-autocomplete>
+    </mat-form-field>
+
+    <div class="list-items">
+      <div class="list-item" *ngFor="let option of filteredOptions | async">
+        <div class="list-item-type">{{ option.type }}</div>
+        <div class="list-item-logo">
+          <img class="list-item-logo" src="{{ option.imgPath }}" alt="logo" />
+        </div>
+        <div class="list-item-name">{{ option.name }}</div>
+        <div class="list-item-discription">
+          {{ option.discription }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
