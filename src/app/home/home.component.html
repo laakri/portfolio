@@ -6,7 +6,7 @@
         I'm a passionate web developer creating elegant and efficient solutions.
         Let's build exceptional websites together.
         <br />
-        <strong>Reach out to me at Glassisaif@gmail.com.</strong>
+        Reach out to me at Glassisaif@gmail.com.
       </span>
 
       <div class="button-section">
@@ -76,18 +76,20 @@
           <div class="post" data-aos="flip-down">
             <div>
               <img class="post-img" src="{{ slide.img }}" alt="" />
+              <img class="post-logo" src="{{ slide.logo }}" alt="" />
             </div>
 
             <div class="post-tag">
-              Angular Engineering with AWS with angular material
+              {{ slide.tag }}
             </div>
 
             <div class="post-description">
-              Data Engineering with AWS with angular material Data Engineering
-              with AWS with angular material Data
+              {{ slide.description }}
             </div>
             <div class="post-more">
-              <button mat-raised-button>View on Github</button>
+              <a mat-raised-button href="{{ slide.github }}" target="_blank">
+                View on Github
+              </a>
             </div>
           </div>
         </div>
@@ -100,7 +102,7 @@
       <i class="material-icons">keyboard_arrow_right</i>Contact
     </div>
     <div class="content-headline">Contact <span>me</span></div>
-    <div class="third-content-contact-section" data-aos="slide-left">
+    <div class="third-content-contact-section">
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
         <div class="form-row">
           <mat-form-field class="full-name-field">

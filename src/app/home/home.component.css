@@ -1,7 +1,5 @@
-
-
 .mainpage{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     min-height: 500px;
   }
@@ -68,6 +66,7 @@
   } 
   .button-section button:hover {
     color: var(--maincolor);
+    background-color: var(--soft-darkcolor);
   } 
   .button-section button i:last-child{
     font-size: 25px;
@@ -78,7 +77,7 @@
 /*********- Right Content -************/
 
  .right-content {
-  width: 550px;
+  width: 480px;
   height: 450px;
   overflow: hidden;
 }
@@ -153,7 +152,7 @@
   border-radius: 10px;
   padding: 20px;
   height: 110px ;
-  width: 320px;
+  width: 260px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -236,17 +235,26 @@
   border-radius: 10px;
   width: 320px;
   height: 410px;
-  position: relative;
 }
 .post-img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 200px;
   width: 100%;
-  background-color: var(--soft-darkcolor);
+  filter: brightness(20%);
+  background-color: #dd7367;
+
+}
+.post-logo{
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 10%;
+  width: 150px;
+  position: absolute;
 }
 .post-tag {
-  max-height: 60px;
+  min-height: 60px;
   font-size: 18px;
   padding: 10px;
   line-height: 1.6;
@@ -260,7 +268,7 @@
   position: absolute;
   bottom: 0;
 }
-.post-more button {
+.post-more a {
   margin: 10px !important;
   background-color: transparent;
   border: 1px solid var(--bordercolor);

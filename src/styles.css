@@ -9,14 +9,13 @@ body.bright-theme {
   box-sizing: border-box;
   color: var(--whitecolor);
   background: var(--darkcolor);
-  font-family: "Roboto", sans-serif;
-
+  font-family: 'Inconsolata', monospace;
   --bordercolor: rgb(219, 219, 219);
-  --darkcolor: #fff;
+  --darkcolor: #fcfdfd;
   --soft-darkcolor: #F0F5F9;
   --whitecolor: #000000;
   --graycolor: #444444;
-  --maincolor: #dd7367;
+  --maincolor: #11b27c;
   --maintranscolor: #d6594b80;
   --secondcolor: #c04e14;
   --darktranscolor: #fdfdfdce;
@@ -32,16 +31,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: var(--whitecolor);
-  background: var(--darkcolor);
-  font-family: "Roboto", sans-serif;
-
-  --darkcolor: #050923;
+  background-color: var(--darkcolor);
+  font-family: 'Inconsolata', monospace;
+  --darkcolor: #060522;
   --bordercolor: #6f6e6e;
-  --darkcolor: #151515;
-  --soft-darkcolor: #1b1a1d;
-  --whitecolor: #fcfcfd;
-  --graycolor: #828283;
-  --maincolor: #FF7F50;
+  --soft-darkcolor: #0b132a;
+  --whitecolor: #fcfdfd;
+  --graycolor: #7c8095;
+  --maincolor: #11b27c;
   --maintranscolor: #FF7F5080;
   --secondcolor: #c04e14;
   --darktranscolor: #19181ada;
@@ -89,10 +86,3 @@ mat-spinner {
   color: var(--darkcolor) !important;
 }
 
-.mat-form-field .mat-input-underline {
-  background-color: var(--darkcolor) !important;
-}
-
-.mat-form-field.mat-form-field-appearance-outline .mat-form-field-outline {
-  color: var(--graycolor) !important;
-}

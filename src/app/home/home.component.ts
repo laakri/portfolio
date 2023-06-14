@@ -60,13 +60,49 @@ export class HomeComponent implements OnInit {
       // You can access the form values using this.contactForm.value
     }
   }
-
   slides = [
-    { img: '../../../assets/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg' },
-    { img: '../../../assets/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg' },
-    { img: '../../../assets/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg' },
-    { img: '../../../assets/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg' },
+    {
+      img: '../../../assets/genefyt.png',
+      logo: '../../../assets/genefyt-logo.png',
+      tag: 'Marketplace for NFT designers (MEAN)',
+      description:
+        'Genefyt is a marketplace for NFT designers to sell their NFT collections.',
+      github: 'https://github.com/laakri/GENEFYT',
+    },
+    {
+      img: '../../../assets/nextgen.png',
+      logo: '../../../assets/nextgen-logo.png',
+      tag: 'Education website for online learning (MEAN)',
+      description:
+        'NextGen is an education website offering online courses and learning materials.',
+      github: 'https://github.com/laakri/EducationPFA',
+    },
+    {
+      img: '../../../assets/tasky.png',
+      logo: '../../../assets/tasky-logo.png',
+      tag: 'Task management made easy (MEAN)',
+      description:
+        'Tasky is a task manager website that helps you organize and manage your tasks effectively.',
+      github: 'https://github.com/laakri/Task-Manager',
+    },
+    {
+      img: '../../../assets/labo.png',
+      logo: '../../../assets/labo-logo.png',
+      tag: 'Online medical analysis results (MEAN)',
+      description:
+        'Labocheba provides an online platform for accessing and viewing your medical analysis results.',
+      github: 'https://github.com/laakri/laboratoires',
+    },
+    {
+      img: '../../../assets/tourism.jpg',
+      logo: '../../../assets/tounisaol-logo.png',
+      tag: 'Book hotels in Tunisia (ANGULAR-PHP-MYSQL)',
+      description:
+        'Tunisaol is a tourism website that allows you to book hotels and accommodations in Tunisia.',
+      github: 'https://github.com/laakri/TourismWeb',
+    },
   ];
+
   slideConfig = { slidesToShow: this.slidesToShow, slidesToScroll: 1 };
 
   @HostListener('window:resize', ['$event'])

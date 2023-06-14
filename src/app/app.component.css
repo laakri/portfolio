@@ -2,15 +2,15 @@
     width: 650px;
     height: 350px;
     border-radius: 50%;
-    background-color: rgba(214, 89, 75, 0.4);
-    box-shadow: 0px 0px 40px 20px rgba(214, 89, 75, 0.4);
+    background-color: #14a0716d;
+    box-shadow: 0px 0px 40px 20px rgba(68, 182, 95, 0.4);
     filter: blur(160px);
     position: absolute;
   }
 
   .blur-circle:nth-child(1) {
     top: -35%;
-    left: 75%;
+    left: 60%;
     transform: translateX(-50%);
   }
   .blur-circle:nth-child(2) {
