@@ -1,42 +1,85 @@
 
+  .example-spacer {
+    flex: 1 1 auto;
+  }
 
-.example-spacer {
-  flex: 1 1 auto;
-}
+  .mainpage {
+    max-width: 1100px;
+    margin: auto;
+  }
 
-.mainpage{
-  max-width: 1100px;
-  margin: auto;
-}
+  mat-toolbar {
+    background-color: transparent;
+    height: 100px;
+  }
 
-mat-toolbar{
-  background-color: transparent;
-  height: 100px;
-}
+  span {
+    font-size: 25px;
+    color: var(--maincolor);
+    letter-spacing: 1px;
+  }
 
-span{
-  font-size: 25px;
-  color: var(--maincolor);
-  letter-spacing: 1px;
-}
+  button {
+    font-size: 16px;
+    color: var(--whitecolor) !important;
+    padding: 0px 20px;
+    align-items: center;
+  }
 
-button{
-  font-size: 16px;
+  button:hover {
+    color: var(--maincolor) !important;
+  }
 
-  color: var(--whitecolor) !important;
-  padding: 0px 20px;
-  align-items: center;
-}
-button:hover{
-  color: var(--maincolor) !important;
-  
-}
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
 
-.hire-button{
-  background-color: var(--maincolor) !important;
-  border-radius: 30px;
-}
+  .dropdown-button {
+    font-size: 16px;
+    color: var(--whitecolor) !important;
+    padding: 0px 20px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
-.hire-button:hover{
-  color: var(--darkcolor) !important;
-}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content button {
+    color: var(--whitecolor) !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .hire-button {
+    background-color: var(--maincolor) !important;
+    border-radius: 30px;
+  }
+
+  .hire-button:hover {
+    color: var(--darkcolor) !important;
+  }
+
+  .activebutton {
+    color: var(--maincolor) !important;
+    background-color: var(--soft-darkcolor) !important;
+  }

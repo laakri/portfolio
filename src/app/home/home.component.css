@@ -1,3 +1,4 @@
+
 .mainpage{
     max-width: 1100px;
     margin: auto;
@@ -31,7 +32,7 @@
 
   .first-content{
     margin-top: 70px;
-    min-height: 560px ;
+    min-height: 460px ;
     display: flex;
     align-items: left;
     justify-content: space-between;
@@ -137,7 +138,7 @@
 }
  /*********- Secend Content -************/
 .secend-content{
-  margin-top: 50px;
+  margin: 50px 10px;
 }
 
 
@@ -177,7 +178,7 @@
 }
  /*********- Third Content -************/
  .third-content{
-  margin: 50px 0;
+  margin: 50px 10px;
   min-height: 400px;
 }
 .third-content-contact-section {
@@ -200,6 +201,13 @@
 .sub-button{
   width: 200px;
   justify-content: center;
+  color: var(--whitecolor) !important;
+  background-color: transparent;
+  border: var(--bordercolor) 1px solid !important;
+}
+
+.sub-button:hover{
+  color: var(--maincolor) !important;
 }
 /********************************************************************************/
 
@@ -291,8 +299,6 @@
   color: var(--graycolor);
 }
 
-
-
  /*********- Testimonial -************/
 
 .testimonial {
@@ -328,4 +334,37 @@
 .author-designation {
   font-size: 14px;
   color: #666;
+}
+@media only screen and (max-width: 950px) {
+  .first-content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-section{
+    justify-content: center;
+  } 
+  .right-content{
+    height: 300px;
+  }
+ 
+  .secend-content-cards{
+  justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+} 
+
+.secend-content-card{
+  width: 90%;
+} 
+.third-content{
+  justify-content: center;
+}
+.third-content-contact-section {
+  width: 90%;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+}
 }
