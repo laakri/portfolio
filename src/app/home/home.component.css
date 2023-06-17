@@ -213,7 +213,7 @@
 
 .slick-carousel-content {
   min-height: 450px;
-  margin-top: 50px ;
+  margin: 50px 30px;
 }
 .slick-carousel-content-size {
   max-width: 1200px;

@@ -18,6 +18,7 @@ export class ToolbarComponent implements OnInit {
       document.body.classList.add(savedTheme);
     }
   }
+
   change_theme(): void {
     const currentTheme = document.body.classList.contains('bright-theme')
       ? 'bright-theme'

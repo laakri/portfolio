@@ -161,4 +161,17 @@ mat-progress-bar {
   width: 70% ;
   border-radius: 5px;
 }
+
 }
+@media only screen and (max-width: 900px) {
+
+.list-item {
+  width: 45%;
+}
+}
+@media only screen and (max-width: 650px) {
+
+  .list-item {
+    width: 100%;
+  }
+  }

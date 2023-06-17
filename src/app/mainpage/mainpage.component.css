@@ -33,7 +33,7 @@
 
 .content1 button{
   background-color: var(--maincolor) ;
-  color: var(--whitecolor);
+  color: #fff !important;
   font-size: 16px;
 }
 
@@ -49,20 +49,25 @@
   right: 0;
   margin: auto;
   top: 480px;
+  display: flex;
+  gap: 20px;
 }
-.content2 button{
+.content2 a{
   font-size: 18px;
   margin: auto 10px;
   opacity: 0.8;
 }
-.content2 button:hover{
+.content2 a:hover{
   background-color: var(--darkcolor) ;
   
   color: var(--whitecolor);
 
 }
 .social-media{
-  margin: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .typewriter {
@@ -81,14 +86,13 @@
 .typewriter h1 {
   font-size: 30px;
   color: var(--whitecolor);
-  font-family: "Times New Roman", Times, serif;
   overflow: hidden;
   border-right: 0.15em solid var(--maincolor)  ;
   white-space: nowrap;
   margin: 0 auto auto auto;
-  letter-spacing: 0.15em;
+  letter-spacing: 1px;
   height: 43px;
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 @keyframes typing {
@@ -107,5 +111,26 @@
   }
   50% {
     border-color: var(--maincolor);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .under_typewriter span {
+    font-size: 40px;
+    height: 300px;
+  }
+  .typewriter h1 {
+    font-size: 20px;
+    border-right: 1px solid var(--maincolor)  ;
+    margin: 0 auto auto auto;
+    letter-spacing: 0.15em;
+    height: 43px;
+  }
+}
+@media only screen and (max-width: 400px) {
+
+  .typewriter h1 {
+    font-size: 16px;
   }
 }

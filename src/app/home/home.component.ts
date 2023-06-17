@@ -11,9 +11,15 @@ import { HostListener } from '@angular/core';
 export class HomeComponent implements OnInit {
   isPaused: boolean = false;
   contactForm!: FormGroup;
-  screenWidth?: number;
-  slidesToShow = 3;
   numb?: any;
+
+  slidesToShow = 3;
+  screenWidth!: number;
+
+  slideConfig = {
+    slidesToShow: this.slidesToShow,
+    slidesToScroll: 1,
+  };
 
   slideitemss: any = [1, 2];
   slideItems: any[] = [
@@ -38,7 +44,9 @@ export class HomeComponent implements OnInit {
       description: 'Medical Analysis Lab',
     },
   ];
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder) {
+    this.getScreenSize();
+  }
 
   ngOnInit() {
     AOS.init();
@@ -103,15 +111,22 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  slideConfig = { slidesToShow: this.slidesToShow, slidesToScroll: 1 };
-
   @HostListener('window:resize', ['$event'])
   getScreenSize(event?: any) {
     this.screenWidth = window.innerWidth;
-    if (this.screenWidth >= 1126) {
+
+    if (this.screenWidth <= 800) {
       this.slidesToShow = 1;
+    } else if (this.screenWidth < 1100) {
+      this.slidesToShow = 2;
     } else {
       this.slidesToShow = 3;
     }
+
+    // Update the number of slides to show
+    this.slideConfig = {
+      ...this.slideConfig,
+      slidesToShow: this.slidesToShow,
+    };
   }
 }
