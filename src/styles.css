@@ -1,30 +1,4 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-
-html,
-body.bright-theme {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: var(--whitecolor);
-  background: var(--darkcolor);
-  font-family: 'Inconsolata', monospace;
-  --bordercolor: rgb(219, 219, 219);
-  --darkcolor: #fcfdfd;
-  --soft-darkcolor: #F0F5F9;
-  --whitecolor: #000000;
-  --graycolor: #444444;
-  --maincolor: #079767;
-  --maintranscolor: #d6594b80;
-  --secondcolor: #c04e14;
-  --darktranscolor: #fdfdfdce;
-  --soft-darktranscolor: #94959769;
-  --buttonactive: #b7b6e5;
-}
-
-html,
 body {
   height: 100%;
   width: 100%;
@@ -33,19 +7,45 @@ body {
   box-sizing: border-box;
   color: var(--whitecolor);
   background-color: var(--darkcolor);
-  font-family: 'Inconsolata', monospace;
-  --darkcolor: #060522;
+  --darkcolor: #000408;
   --bordercolor: #6f6e6e;
-  --soft-darkcolor: rgba(32, 10, 69, 0.403);
+  --soft-darkcolor: #0c1017;
   --whitecolor: #fcfdfd;
   --graycolor: #7c8095;
-  --maincolor: #11b27c;
+  --maincolor: #ff3860;
   --maintranscolor: #FF7F5080;
   --secondcolor: #c04e14;
-  --darktranscolor: #19181ada;
-  --soft-darktranscolor: #26272b69;
+  --darktranscolor: #00040889;
+  --soft-darktranscolor: #383a4169;
   --buttonactive: #46526e;
+  overflow-x: hidden;
+
+  
 }
+body.bright-theme {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--whitecolor);
+  background: var(--darkcolor);
+  --bordercolor: rgb(219, 219, 219);
+  --darkcolor: #fcfdfd;
+  --soft-darkcolor: #F0F5F9;
+  --whitecolor: #000000;
+  --graycolor: #444444;
+  --maincolor: #ff3860;
+  --maintranscolor: #d6594b80;
+  --secondcolor: #c04e14;
+  --darktranscolor: #F0F5F9;
+  --soft-darktranscolor: #94959769;
+  --buttonactive: #b7b6e5;
+  overflow-x: hidden;
+
+}
+
+
 a,
 button {
   cursor: pointer;
@@ -62,12 +62,80 @@ button {
 ul {
   list-style-type: none;
 }
+::ng-deep input::placeholder{
+  color: var(--whitecolor) !important;
+}
+/************ scroll bar ****************/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--bordercolor);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--maincolor);
+}
 
-/********************* -Divider ***************************/
+::-webkit-scrollbar-track {
+  background-color: var(--soft-darktranscolor);
+}
+/*********************-Active Button********************/
+
+.activebutton {
+  background-color: var(--buttonactive);
+}
+
+/********************* -Slick ***************************/
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--whitecolor) !important;
+  font-size: 25px !important ;
+  margin: -18px;
+}
+/********************* -Form ***************************/
+
 
 mat-divider {
   margin: auto !important;
   width: 95% !important ;
   background-color: rgba(252, 252, 252, 0.24) !important;
 }
+/*************************** -tabs- ****************************/
+/* Styles for tab labels */
+.mat-tab-list {
+  border-bottom: var(--bordercolor) solid 1px !important;
+}
+.mat-tab-label {
+  min-width: 150px !important;
+  color: var(--whitecolor);
+  font-size: 16px;
+}
 
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+  color: var(--whitecolor);
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+  background-color: var(--whitecolor) !important;
+}
+/*************************** -toggle-group- ****************************/
+
+.mat-button-toggle-group {
+  border: transparent solid 1px;
+}
+.mat-button-toggle {
+  background-color: transparent;
+  color: var(--whitecolor);
+  border: var(--bordercolor) solid 1px !important;
+  margin: auto 5px;
+  border-radius: 3px;
+}
+.mat-button-toggle mat-icon {
+  font-size: 20px;
+}
+.mat-button-toggle-checked {
+  background-color: var(--whitecolor);
+  color: var(--darkcolor) !important;
+}

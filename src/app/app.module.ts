@@ -6,7 +6,6 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
-import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ThreeModelComponent } from './home/three-model/three-model.component';
 
@@ -48,6 +47,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FooterComponent } from './footer/footer.component';
 
 /* ********************************************* */
 
@@ -58,10 +58,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ToolbarComponent,
     AboutComponent,
     ResumeComponent,
-    ContactComponent,
     HomeComponent,
     ThreeModelComponent,
     LoadingScreenComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

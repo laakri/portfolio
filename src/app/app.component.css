@@ -1,29 +1,24 @@
 .blur-circle {
-    width: 650px;
-    height: 350px;
-    border-radius: 50%;
-    background-color: #14a0716d;
-    box-shadow: 0px 0px 40px 20px rgba(68, 182, 95, 0.4);
-    filter: blur(160px);
-    position: absolute;
-  }
+  width: 650px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #ff38606d;
+  box-shadow: 0px 0px 40px 20px rgba(182, 68, 68, 0.4);
+  filter: blur(160px);
+  position: absolute;
+}
 
-  .blur-circle:nth-child(1) {
-    top: -35%;
-    left: 60%;
-    transform: translateX(-50%);
-  }
-  .blur-circle:nth-child(2) {
-    top: 30%;
-    left: -30%;
-  }
+.blur-circle:nth-child(1) {
+  top: -35%;
+  left: 60%;
+  transform: translateX(-50%);
+}
+.blur-circle:nth-child(2) {
+  top: 30%;
+  left: -30%;
+}
 
-  .root {
-    display: none;
-  }
-  
-  .hidden {
-    display: block;
-  }
-  
-  
+.root {
+  display: none;
+}
+

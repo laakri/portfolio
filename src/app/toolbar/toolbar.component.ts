@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   isBrightTheme: any;
+  maxscreen = true;
+  screenWidth!: number;
 
-  constructor() {}
+  constructor() {
+    this.getScreenSize();
+  }
 
   ngOnInit(): void {
     this.isBrightTheme = document.body.classList.contains('bright-theme');
@@ -30,5 +35,15 @@ export class ToolbarComponent implements OnInit {
 
     document.body.classList.remove(currentTheme);
     document.body.classList.add(newTheme);
+  }
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?: any) {
+    this.screenWidth = window.innerWidth;
+
+    if (this.screenWidth <= 800) {
+      this.maxscreen = true;
+    } else {
+      this.maxscreen = false;
+    }
   }
 }

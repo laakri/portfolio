@@ -119,66 +119,28 @@
     <div class="third-content-contact-section">
       <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
         <div class="form-row">
-          <mat-form-field class="full-name-field">
-            <input
-              matInput
-              placeholder="Full Name"
-              formControlName="fullName"
-              required
-            />
-          </mat-form-field>
-          <mat-form-field class="email-field">
-            <input
-              matInput
-              placeholder="Email"
-              formControlName="email"
-              required
-            />
-          </mat-form-field>
+          <input
+            class="input-field"
+            type="email"
+            placeholder="Email"
+            formControlName="email"
+            required
+          />
         </div>
-
         <div class="form-row">
-          <mat-form-field class="phone-field">
-            <input matInput placeholder="Phone" formControlName="phone" />
-          </mat-form-field>
-          <mat-form-field class="subject-field">
-            <input matInput placeholder="Subject" formControlName="subject" />
-          </mat-form-field>
-        </div>
-
-        <mat-form-field class="message-field">
           <textarea
-            matInput
+            class="textarea-field"
             placeholder="Message"
             formControlName="message"
             required
           ></textarea>
-        </mat-form-field>
+        </div>
 
-        <button
-          class="form-row sub-button"
-          mat-raised-button
-          color="primary"
-          type="submit"
-        >
-          Submit
-        </button>
+        <button mat-raised-button type="submit">Submit</button>
       </form>
     </div>
   </div>
 
   <mat-divider></mat-divider>
-
-  <div class="testimonial">
-    <div class="testimonial-content">
-      <div class="testimonial-text">
-        "Experienced web developer with a strong work ethic, problem-solving
-        skills, and a passion for exceptional websites."
-      </div>
-      <div class="testimonial-author">
-        <div class="author-name">Saif Eddine Jelassi</div>
-        <div class="author-designation">Web Developer</div>
-      </div>
-    </div>
-  </div>
+  <app-footer></app-footer>
 </div>

@@ -34,6 +34,16 @@ export class HomeComponent implements OnInit {
       description: 'Online Education Platform',
     },
     {
+      smallText: 'Placeholder Tech Stack',
+      bigText: 'Cavers',
+      description: 'Crypto Blogs Website',
+    },
+    {
+      smallText: 'Placeholder Tech Stack',
+      bigText: 'NextMunch',
+      description: 'Ultimate Food Experience',
+    },
+    {
       smallText: 'Angular, PHP, MySQL',
       bigText: 'TuniSoul',
       description: 'Tourism Website',
@@ -44,6 +54,7 @@ export class HomeComponent implements OnInit {
       description: 'Medical Analysis Lab',
     },
   ];
+
   constructor(private formBuilder: FormBuilder) {
     this.getScreenSize();
   }
@@ -70,6 +81,14 @@ export class HomeComponent implements OnInit {
   }
   slides = [
     {
+      img: 'https://i.ibb.co/dmpYdNS/image.png',
+      logo: '../../../assets/cavers-logo.png',
+      tag: 'Explore Crypto Insights with Cavers (MEAN)',
+      description:
+        'Cavers is a crypto blogs website that provides valuable insights and information about cryptocurrency for financial success.',
+      github: 'https://github.com/laakri/cavers',
+    },
+    {
       img: '../../../assets/genefyt.png',
       logo: '../../../assets/genefyt-logo.png',
       tag: 'Marketplace for NFT designers (MEAN)',
@@ -84,6 +103,13 @@ export class HomeComponent implements OnInit {
       description:
         'NextGen is an education website offering online courses and learning materials.',
       github: 'https://github.com/laakri/EducationPFA',
+    },
+    {
+      img: 'https://i.gyazo.com/3b8d0eb651b53d41881418d18361352a.jpg',
+      logo: '../../../assets/NextMuch-logo.png',
+      tag: 'NextMunch - Your Ultimate Food Experience (MEAN)',
+      description: 'NextMunch is a website that revolutionizes food services. ',
+      github: 'https://github.com/laakri/NextMunch',
     },
     {
       img: '../../../assets/tasky.png',

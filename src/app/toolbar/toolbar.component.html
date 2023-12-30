@@ -3,7 +3,7 @@
     <a routerLink=""><span>_Laakri</span></a>
     <span class="example-spacer"></span>
 
-    <div class="left-content">
+    <div class="left-content" *ngIf="!maxscreen">
       <button
         mat-button
         [routerLink]="['/h/home']"
@@ -25,12 +25,52 @@
       >
         Resume
       </button>
-      <button mat-raised-button class="hire-button">Hire me</button>
+
+      <a href="../../assets/cv.pdf" download target="_blank">
+        <button mat-raised-button class="hire-button">Download CV</button>
+      </a>
+
+      <button mat-button (click)="change_theme()">
+        <mat-icon aria-label="campaign">brightness_medium</mat-icon>
+      </button>
+    </div>
+
+    <div class="left-content" *ngIf="maxscreen">
+      <button mat-button [matMenuTriggerFor]="beforeMenu">
+        <i class="material-icons">menu</i>
+      </button>
+      <mat-menu class="menu" #beforeMenu="matMenu" xPosition="before">
+        <button
+          mat-menu-item
+          [routerLink]="['/h/home']"
+          routerLinkActive="activebutton"
+        >
+          Home
+        </button>
+        <button
+          mat-menu-item
+          [routerLink]="['/h/about']"
+          routerLinkActive="activebutton"
+        >
+          About
+        </button>
+        <button
+          mat-menu-item
+          [routerLink]="['/h/resume']"
+          routerLinkActive="activebutton"
+        >
+          Resume
+        </button>
+
+        <a href="../../assets/cv.pdf" download target="_blank">
+          <button mat-menu-item class="hire-button">Download CV</button>
+        </a>
+      </mat-menu>
+
       <button mat-button (click)="change_theme()">
         <mat-icon aria-label="campaign">brightness_medium</mat-icon>
       </button>
     </div>
   </mat-toolbar>
 </div>
-
 <router-outlet></router-outlet>

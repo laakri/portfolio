@@ -50,10 +50,10 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     AOS.init();
     setTimeout(() => {
-      this.progressValuefront = 80;
+      this.progressValuefront = 90;
     }, 1000);
     setTimeout(() => {
-      this.progressValueback = 70;
+      this.progressValueback = 80;
     }, 1000);
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
@@ -83,7 +83,12 @@ export class AboutComponent implements OnInit {
       discription: 'Angular is a frontend platform .',
       type: 'Front-end',
     },
-
+    {
+      name: 'Node Js',
+      imgPath: 'https://i.ibb.co/VCFGCn6/node.png',
+      discription: 'Node.js is an open source, cross platform .',
+      type: 'Back-end',
+    },
     {
       name: 'Css',
       imgPath:
@@ -98,12 +103,7 @@ export class AboutComponent implements OnInit {
       discription: 'back end web application framework for Node.js .',
       type: 'Back-end',
     },
-    {
-      name: 'Node Js',
-      imgPath: 'https://i.ibb.co/VCFGCn6/node.png',
-      discription: 'Node.js is an open source, cross platform .',
-      type: 'Back-end',
-    },
+
     {
       name: 'MongoDB',
       imgPath: 'https://i.ibb.co/2WjG7zR/mongodb-logo.png',
@@ -147,6 +147,19 @@ export class AboutComponent implements OnInit {
       imgPath: 'https://i.ibb.co/N2tJsCC/nginx-logo.png',
       discription: ' A web server that can also be used as a reverse proxy .',
       type: 'Web Server',
+    },
+    {
+      name: 'Docker',
+      imgPath: 'https://i.ibb.co/R7qrnQq/image.png',
+      discription:
+        ' Docker is an open platform for developing, and running apps .',
+      type: 'Web Server',
+    },
+    {
+      name: 'Symfony',
+      imgPath: 'https://i.ibb.co/Kb0QDCB/image.png',
+      discription: 'Symfony is a PHP framework to build web applications,.',
+      type: 'Front Back',
     },
   ];
 }

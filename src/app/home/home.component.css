@@ -28,6 +28,7 @@
   .content-headline span{
     color: var(--maincolor);
   }
+  
  /*********- First Content -************/
 
   .first-content{
@@ -108,6 +109,7 @@
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease;
+  border-radius: 20px;
 }
 
 
@@ -187,11 +189,7 @@
   display: flex;
   flex-direction: column;
 }
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
+
 .form-row mat-form-field{
   width: 500px;
 }
@@ -299,64 +297,76 @@
   color: var(--graycolor);
 }
 
- /*********- Testimonial -************/
 
-.testimonial {
-  max-width: 85%;
-  margin: 20px auto;
-  min-height: 70px;
-}
-
-.testimonial-content {
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-text {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  
-}
-.testimonial-author{
-  text-align: center;
+.form-row {
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
 }
-.author-name {
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
   font-size: 16px;
-  font-weight: 580;
+  color: var(--whitecolor);
+  transition: border-color 0.3s ease;
+  background-color: var(--soft-darkcolor);
 }
 
-.author-designation {
-  font-size: 14px;
-  color: #666;
+/* Hover effect for input and textarea */
+.input-field:hover,
+.textarea-field:hover {
+  border-color: var(--maincolor);
 }
+
+/* Focus effect for input and textarea */
+.input-field:focus,
+.textarea-field:focus {
+  border-color: var(--maincolor);
+  outline: none;
+}
+
+/* Placeholder color for input and textarea */
+.input-field::placeholder,
+.textarea-field::placeholder {
+  color: #999;
+}
+
+
+
 @media only screen and (max-width: 950px) {
   .first-content{
+    margin-top: -50px;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
   }
-  .button-section{
-    justify-content: center;
-  } 
+  
   .right-content{
     height: 300px;
+    width: 90%;
+    justify-content: center;
+    margin-left: 20px;
   }
- 
+ .slide-item{
+  background-color: var(--darktranscolor);
+
+ }
   .secend-content-cards{
   justify-content: center;
+  align-items: center;
     flex-direction: column;
     gap: 20px;
+
+
 } 
 
 .secend-content-card{
-  width: 90%;
+    width: 80%;
+  background-color: transparent;
+
 } 
 .third-content{
   justify-content: center;
@@ -366,5 +376,17 @@
   margin: 40px;
   display: flex;
   flex-direction: column;
+}
+.left-content  {
+  width: 90%;
+}
+.left-content h1 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.left-content span {
+  font-size: 17px;
+  line-height: 1.2;
+
 }
 }

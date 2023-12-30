@@ -1,0 +1,37 @@
+ /*********- Testimonial -************/
+
+ .testimonial {
+    max-width: 85%;
+    margin: 20px auto;
+    min-height: 70px;
+  }
+  
+  .testimonial-content {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    
+  }
+  .testimonial-author{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .author-name {
+    font-size: 16px;
+    font-weight: 580;
+  }
+  
+  .author-designation {
+    font-size: 14px;
+    color: #666;
+  }
+  

@@ -1,4 +1,3 @@
-import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -14,11 +13,10 @@ const routes: Routes = [
     path: 'h',
     component: ToolbarComponent,
     children: [
-      { path: '', redirectTo: '/h/about', pathMatch: 'full' },
+      { path: '', redirectTo: '/h/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'resume', component: ResumeComponent },
-      { path: 'contact', component: ContactComponent },
     ],
   },
 ];
